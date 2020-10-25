@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="6dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginEnd="6dp"
+    android:layout_marginBottom="3dp"
+    android:elevation="10dp"
+    android:layoutDirection="ltr"
+    android:paddingBottom="5dp"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:id="@+id/rel_layout_person_list"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/back_layout_recycler"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txt_title_identifyCode_service_view"
+            style="@style/title_style"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/txt_identifyCode" />
+
+        <TextView
+            android:id="@+id/txt_identifyCode_service_view"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_title_identifyCode_service_view"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/txt_title_identifyCode_service_view"
+            android:padding="2dp"
+            android:text="11111"
+            android:textColor="@color/color_text"
+            android:textDirection="rtl"
+            android:textSize="@dimen/size_number" />
+
+        <TextView
+            android:id="@+id/txt_title_sender_service_view"
+            style="@style/title_style"
+            android:layout_below="@+id/txt_title_identifyCode_service_view"
+            android:layout_alignRight="@+id/txt_title_identifyCode_service_view"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_sender"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_sender_service_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_title_sender_service_view"
+            android:layout_toLeftOf="@+id/txt_title_sender_service_view"
+            android:layout_alignRight="@+id/txt_identifyCode_service_view"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="احمد گودرزی"
+            android:textColor="@color/color_text"
+            android:textDirection="rtl"
+            android:textSize="@dimen/size_text" />
+
+        <TextView
+            android:id="@+id/txt_title_receiver_service_view"
+            style="@style/title_style"
+            android:layout_below="@+id/txt_title_sender_service_view"
+            android:layout_alignRight="@+id/txt_title_identifyCode_service_view"
+            android:layout_marginTop="10dp"
+            android:text="@string/txt_receiver"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_receiver_service_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_title_receiver_service_view"
+            android:layout_toLeftOf="@+id/txt_title_receiver_service_view"
+            android:layout_alignRight="@+id/txt_identifyCode_service_view"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:text="@string/txt_receiver"
+            android:textColor="@color/color_text"
+            android:textDirection="rtl"
+            android:textSize="@dimen/size_text" />
+
+
+
+        <View
+            android:id="@+id/separate_service_view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/txt_receiver_service_view"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_pic_person_view"
+            android:background="@color/color_separate" />
+
+        <TextView
+            android:id="@+id/txt_title_toman_service_view"
+            style="@style/title_style"
+            android:layout_above="@+id/separate_service_view"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/txt_toman"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_rentMount_service_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txt_title_toman_service_view"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txt_title_toman_service_view"
+            android:padding="2dp"
+            android:text="1000000"
+            android:textColor="@color/color_text"
+            android:textDirection="rtl"
+            android:textSize="@dimen/size_number" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/txt_title_state_service_view"-->
+<!--            style="@style/title_style"-->
+<!--            android:layout_below="@+id/separate_service_view"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:text="@string/txt_state"-->
+
+<!--            />-->
+
+        <TextView
+            android:id="@+id/txt_state_service_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separate_service_view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:padding="2dp"
+            android:text="@string/sw_state"
+            style="@style/paraph_style"
+            android:textDirection="rtl"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

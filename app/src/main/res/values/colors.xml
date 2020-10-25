@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#FFC107</color>
+
+<!--    <color name="primary">#FF5722</color>-->
+<!--    <color name="primary_dark">#E64A19</color>-->
+<!--    <color name="primary_light">#FFCCBC</color>-->
+<!--    <color name="accent">#FFC107</color>-->
+<!--    <color name="primary_text">#212121</color>-->
+<!--    <color name="secondary_text">#757575</color>-->
+<!--    <color name="icons">#FFFFFF</color>-->
+<!--    <color name="divider">#BDBDBD</color>-->
+
+    <!--colors for profile-->
+    <color name="profilePrimaryDark">#FF3B30</color>
+    <color name="profileAccentColor">#F7F7F7</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="profileBackground">#fff</color>
+    <color name="blackTextColor">#000</color>
+    <color name="profileEditTextColor">#707070</color>
+
+    <color name="text_shadow">#7F000000</color>
+    <color name="color_title">#BAB7B7</color>
+    <color name="color_text">#555</color>
+    <color name="color_separate">#FFC107</color>
+    <color name="color_paraph">#86E304</color>
+</resources>

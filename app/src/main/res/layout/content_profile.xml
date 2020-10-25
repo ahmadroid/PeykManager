@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="ir.ahmadandroid.mapproject.ui.fragments.ProfileFragment"
+    tools:showIn="@layout/fragment_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/headerText"
+            android:layout_marginBottom="20dp"
+            android:text="@string/txt_person_info" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/img_name_profile_content"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/person" />
+
+            <TextView
+                android:id="@+id/txt_title_name_profile_content"
+                style="@style/profileDetailsTextMain"
+                android:layout_toStartOf="@id/img_name_profile_content"
+                android:text="@string/txt_person_name" />
+
+            <TextView
+                android:id="@+id/txt_name_profile_content"
+                style="@style/profileDetailsMiniText"
+                android:layout_toStartOf="@id/img_name_profile_content"
+                android:layout_below="@+id/txt_title_name_profile_content"
+                android:text="developer" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/img_nationalCode_profile_content"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/icon_card" />
+
+            <TextView
+                android:id="@+id/txt_title_nationalCode_profile_content"
+                style="@style/profileDetailsTextMain"
+                android:layout_toStartOf="@id/img_nationalCode_profile_content"
+                android:text="@string/txt_person_nationalCode" />
+
+            <TextView
+                android:id="@+id/txt_nationalCode_profile_content"
+                style="@style/profileDetailsMiniText"
+                android:layout_toStartOf="@id/img_nationalCode_profile_content"
+                android:layout_below="@+id/txt_title_nationalCode_profile_content"
+                android:text="11111111" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/img_mobile_profile_content"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/mobile" />
+
+            <TextView
+                android:id="@+id/txt_title_mobile_profile_content"
+                style="@style/profileDetailsTextMain"
+                android:layout_toStartOf="@id/img_mobile_profile_content"
+                android:text="@string/txt_person_mobile" />
+
+            <TextView
+                android:id="@+id/txt_mobile_profile_content"
+                style="@style/profileDetailsMiniText"
+                android:layout_toStartOf="@id/img_mobile_profile_content"
+                android:layout_below="@+id/txt_title_mobile_profile_content"
+                android:text="+91-8129999999" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <ImageView
+                android:id="@+id/img_address_profile_content"
+                style="@style/profileDetailsImage"
+                android:src="@drawable/address" />
+
+            <TextView
+                android:id="@+id/txt_title_address_profile_content"
+                style="@style/profileDetailsTextMain"
+                android:layout_toLeftOf="@id/img_address_profile_content"
+                android:text="Address" />
+
+            <TextView
+                android:id="@+id/txt_address_profile_content"
+                style="@style/profileDetailsMiniText"
+                android:layout_toLeftOf="@id/img_address_profile_content"
+                android:layout_below="@+id/txt_title_address_profile_content"
+                android:text="Avenue 2nd Street NW SY." />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_marginBottom="55dp"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.AdminHomeFragment">
+
+    <com.mapbox.mapboxsdk.maps.MapView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mpView_admin_fragment"
+        mapbox:mapbox_cameraTargetLat="32.663313"
+        mapbox:mapbox_cameraTargetLng="51.680432"
+        mapbox:mapbox_cameraZoom="8"
+        />
+
+</FrameLayout>

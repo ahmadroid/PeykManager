@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_peyk"
+    app:startDestination="@id/nav_home"
+    >
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="ir.ahmadandroid.mapproject.ui.fragments.AdminHomeFragment"
+        android:label="admin"
+        tools:layout="@layout/fragment_admin_home" />
+
+    <fragment
+        android:id="@+id/nav_person_list"
+        android:name="ir.ahmadandroid.mapproject.ui.fragments.PersonListFragment"
+        android:label="person list"
+        tools:layout="@layout/fragment_person_list" />
+
+    <fragment
+        android:id="@+id/nav_service_list"
+        android:name="ir.ahmadandroid.mapproject.ui.fragments.ServiceListFragment"
+        android:label="service list"
+        tools:layout="@layout/fragment_service_list" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="ir.ahmadandroid.mapproject.ui.fragments.ProfileFragment"
+        android:label="profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

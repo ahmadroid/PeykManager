@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.ahmadandroid.mapproject">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".application.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.activities.LocationActivity"
+            android:theme="@style/myStyle">
+
+
+        </activity>
+        <activity android:name=".ui.activities.SelectDriverFromOnMapActivity"
+            android:theme="@style/myStyle"
+            />
+        <activity
+            android:name=".ui.activities.InsertServiceActivity"
+            android:theme="@style/myStyle" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/myStyle" />
+        <activity
+            android:name=".ui.activities.PersonListActivity"
+            android:theme="@style/myStyle" />
+        <activity
+            android:name=".ui.activities.EditPersonInformationActivity"
+            android:theme="@style/myStyle" />
+        <activity
+            android:name=".ui.activities.AdminActivity"
+            android:theme="@style/myStyle" />
+        <activity
+            android:name=".ui.activities.InsertPersonActivity"
+            android:theme="@style/myStyle" />
+        <activity android:name=".utils.MyActivity" />
+        <activity
+            android:name=".ui.activities.SplashActivity"
+            android:theme="@style/myStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:theme="@style/myStyle" />
+        <activity
+            android:name=".ui.activities.MapActivity"
+            android:theme="@style/myStyle">
+
+        </activity>
+        <activity
+            android:name=".ui.activities.MapActivityUpdateLocation"
+            android:theme="@style/myStyle" />
+
+    </application>
+
+</manifest>
